@@ -2,7 +2,7 @@
 Python package for downloading images and videos from Wikimedia Commons using the Wikimedia API (https://commons.wikimedia.org/w/api.php).
 
 [![PyPI](https://img.shields.io/pypi/v/pyWikiCommons)](https://pypi.org/project/pyWikiCommons/)
-[![pytest](https://github.com/amckenna41/pyWikiCommons/workflows/Building and Testing pyWikiCommons/badge.svg)](https://github.com/amckenna41/pyWikiCommons/actions?query=workflowBuilding and Testing pyWikiCommons)
+<!-- [![pytest](https://github.com/amckenna41/pyWikiCommons/workflows/Building and Testing pyWikiCommons/badge.svg)](https://github.com/amckenna41/pyWikiCommons/actions?query=workflowBuilding and Testing pyWikiCommons) -->
 [![Platforms](https://img.shields.io/badge/platforms-linux%2C%20macOS%2C%20Windows-green)](https://pypi.org/project/pyWikiCommons/)
 [![PythonV](https://img.shields.io/pypi/pyversions/pyWikiCommons?logo=2)](https://pypi.org/project/pyWikiCommons/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
