@@ -2,12 +2,12 @@
 Python package for downloading images and videos from Wikimedia Commons using the Wikimedia API (https://commons.wikimedia.org/w/api.php).
 
 [![PyPI](https://img.shields.io/pypi/v/pyWikiCommons)](https://pypi.org/project/pyWikiCommons/)
-[![pytest](https://github.com/amckenna41/pyWikiCommons/workflows/Building%20and%20Testing%20%F0%9F%90%8D/badge.svg)](https://github.com/amckenna41/pyWikiCommons/actions?query=workflowBuilding%20and%20Testing%20%F0%9F%90%8D)
+[![pytest](https://github.com/amckenna41/pyWikiCommons/workflows/Building and Testing pyWikiCommons/badge.svg)](https://github.com/amckenna41/pyWikiCommons/actions?query=workflowBuilding and Testing pyWikiCommons)
 [![Platforms](https://img.shields.io/badge/platforms-linux%2C%20macOS%2C%20Windows-green)](https://pypi.org/project/pyWikiCommons/)
 [![PythonV](https://img.shields.io/pypi/pyversions/pyWikiCommons?logo=2)](https://pypi.org/project/pyWikiCommons/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
 [![Build](https://img.shields.io/github/workflow/status/amckenna41/pyWikiCommons/Deploy%20to%20PyPI%20%F0%9F%93%A6)](https://github.com/amckenna41/pyWikiCommons/actions)
-[![Build Status](https://travis-ci.com/amckenna41/pyWikiCommons.svg?branch=main)](https://travis-ci.com/amckenna41/pyWikiCommons)
+<!-- [![Build Status](https://travis-ci.com/amckenna41/pyWikiCommons.svg?branch=main)](https://travis-ci.com/amckenna41/pyWikiCommons) -->
 <!-- [![CircleCI](https://circleci.com/gh/amckenna41/pyWikiCommons.svg?style=svg&circle-token=d860bb64668be19d44f106841b80eb47a8b7e7e8)](https://app.circleci.com/pipelines/github/amckenna41/pyWikiCommons) -->
 <!-- [![codecov](https://codecov.io/gh/amckenna41/DCBLSTM_PSP/branch/master/graph/badge.svg?token=4PQDVGKGYN)](https://codecov.io/gh/amckenna41/DCBLSTM_PSP) -->
 [![Issues](https://img.shields.io/github/issues/amckenna41/pyWikiCommons)](https://github.com/amckenna41/pyWikiCommons/issues)
