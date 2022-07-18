@@ -17,7 +17,8 @@ Python package for downloading images and videos from Wikimedia Commons using th
 [![Commits](https://img.shields.io/github/commit-activity/w/amckenna41/pyWikiCommons)](https://github.com/amckenna41/pyWikiCommons)
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/amckenna41/pyWikiCommons/master/images/mediaWiki.svg" alt="pyWikiCommonsLogo" width="250"/>
+<img src="https://raw.githubusercontent.com/amckenna41/pyWikiCommons/main/images/mediawiki.svg" alt="pyWikiCommonsLogo" width="250"/>
+
 </p>
 
 Table of Contents

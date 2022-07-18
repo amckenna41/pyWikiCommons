@@ -5,7 +5,7 @@ import os
 import requests
 import unittest
 
-from pyWikiCommons import wikiCommons
+from pyWikiCommons import pyWikiCommons
 
 class PyWikiCommonsTests(unittest.TestCase):
 
