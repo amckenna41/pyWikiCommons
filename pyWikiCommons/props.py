@@ -4,7 +4,7 @@ List of properties, actions and query parameters that can be used with the Wikim
 https://commons.wikimedia.org/w/api.php 
 
 """
-# https://www.mediawiki.org/wiki/API:Data_formats
+#https://www.mediawiki.org/wiki/API:Data_formats
 FORMAT=[
     "json",
     "xml",

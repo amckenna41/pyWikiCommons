@@ -1,6 +1,8 @@
 # pyWikiCommons #
 Python package for downloading images and videos from Wikimedia Commons using the Wikimedia API (https://commons.wikimedia.org/w/api.php).
 
+> In Development
+
 [![PyPI](https://img.shields.io/pypi/v/pyWikiCommons)](https://pypi.org/project/pyWikiCommons/)
 <!-- [![pytest](https://github.com/amckenna41/pyWikiCommons/workflows/Building and Testing pyWikiCommons/badge.svg)](https://github.com/amckenna41/pyWikiCommons/actions?query=workflowBuilding and Testing pyWikiCommons) -->
 [![Platforms](https://img.shields.io/badge/platforms-linux%2C%20macOS%2C%20Windows-green)](https://pypi.org/project/pyWikiCommons/)
@@ -14,11 +16,10 @@ Python package for downloading images and videos from Wikimedia Commons using th
 [![Size](https://img.shields.io/github/repo-size/amckenna41/pyWikiCommons)](https://github.com/amckenna41/pyWikiCommons)
 [![Commits](https://img.shields.io/github/commit-activity/w/amckenna41/pyWikiCommons)](https://github.com/amckenna41/pyWikiCommons)
 
-```
+<p align="center">
+<img src="https://raw.githubusercontent.com/amckenna41/pyWikiCommons/master/images/mediaWiki.svg" alt="pyWikiCommonsLogo" width="250"/>
+</p>
 
-In Development...
-
-```
 Table of Contents
 -----------------
 
@@ -35,7 +36,9 @@ Table of Contents
 
 Introduction
 ------------
-https://www.mediawiki.org/wiki/API:Main_page
+pyWikiCommons provides a Python interface for the MediaWiki API [[1]](#references). The main purpose of the package is to allow you to download any file/image/video in the Wikipedia/Wikmedia ecosystem using one simple line of code. <br> <br>
+The software is currently in its beta stage and only serves its purpose of downloading any file from the Wikimedia database, but there exist an abundance of potential parameters and functionalities of the API that can be exploited moving forward with the software [[2]](#references).
+
 
 Requirements
 ------------
@@ -59,7 +62,22 @@ cd pyWikiCommons
 
 Usage
 -----
-https://www.mediawiki.org/wiki/API:Main_page
+
+Downloading flag of Germany to default output folder:
+```python
+from pyWikiCommons import pyWikiCommons
+
+pyWikiCommons.download_common_image("File:Flag_of_Germany.svg")
+
+```
+
+Getting download url of image:
+```python
+from pyWikiCommons import pyWikiCommons
+
+pyWikiCommons.get_commons_url("File:Flag_of_Germany.svg")
+
+```
 
 Directories
 -----------

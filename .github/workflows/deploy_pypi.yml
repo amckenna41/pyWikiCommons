@@ -35,6 +35,7 @@ jobs:
     - name: Build and upload to PyPI
       run: |
         python3 setup.py sdist bdist_wheel
+        twine check dist/*
         python3 -m twine upload dist/*
       env:
         TWINE_USERNAME: __token__
@@ -48,5 +49,5 @@ jobs:
     - name: Install pyWikiCommons from PyPI
       run: |
         pip install pyWikiCommons --upgrade
-        echo -e "import pyWikiCommons as pysar\nprint(pyWikiCommons.__version__)" | python3
+        echo -e "import pyWikiCommons as pyWiki\nprint(pyWiki.__version__)" | python3
         echo "pyWikiCommons successfully installed"
