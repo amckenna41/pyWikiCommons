@@ -3,7 +3,7 @@ import argparse
 import logging
 import os, getpass
 from urllib.parse import unquote
-from . props import ALL_PROPS, IMAGEINFO_IIPROPS, FORMAT
+from . props import ALL_PROPS, IMAGEINFO_IIPROPS, FORMAT, ACTIONS
 from . __init__ import __version__
 
 #initialise logger module
@@ -13,10 +13,10 @@ log = logging.getLogger(__name__)
 USER_AGENT_HEADER = {'User-Agent': 'pyWikiCommons/{} ({}; {})'.format(__version__,
                                        'https://github.com/amckenna41/pyWikiCommons', getpass.getuser())}
 #wikimedia API URL
-BASE_URL = "https://commons.wikimedia.org/w/api.php?action=query"
+# BASE_URL = "https://commons.wikimedia.org/w/api.php?action=query"
+BASE_URL = "https://en.wikipedia.org/w/api.php?action="
 
-
-def download_commons_image(filename, outputFolder="wikiCommonsOutput", format_='json', 
+def download_commons_image(filename, outputFolder="wikiCommonsOutput", action="query", format_='json', 
     props=['imageinfo'], iiprops=["url"], decode=True):
     """
     Download image, specified by filename, using the Wikimedia API.
@@ -58,6 +58,10 @@ def download_commons_image(filename, outputFolder="wikiCommonsOutput", format_='
     if ("imageinfo" not in valid_props):
         valid_props.append("imageinfo")
 
+    #ensure selected action is valid, if not set to "query"
+    if (action not in ACTIONS):
+        action="query"
+
     #iterate over all input ii properties, validating their correctness 
     for iiprop in iiprops:
       if (iiprop not in IMAGEINFO_IIPROPS):
@@ -78,16 +82,16 @@ def download_commons_image(filename, outputFolder="wikiCommonsOutput", format_='
       filename = "File:" + filename
 
     #build request url with all query parameters
-    request_url = BASE_URL + "&format=" + format_ + "&titles=" + filename
+    request_url = BASE_URL + action + "&format=" + format_ + "&titles=" + filename
     request_url += "&prop=" + '|'.join(valid_props)
     request_url += "&iiprop=" + '|'.join(valid_iiprops)
 
     #generate API call, convert to json
-    response = requests.get(request_url).json()
+    response = requests.get(request_url, headers=USER_AGENT_HEADER).json()
 
     #get download URL for image
     file_url = response['query']['pages'].popitem()[1]['imageinfo'][0]['url']
-    
+  
     #generate call to image url
     new_response = requests.get(file_url, stream=True, headers=USER_AGENT_HEADER)
 
