@@ -121,7 +121,7 @@ def download_commons_image(filename, outputFolder="wikiCommonsOutput", action="q
 
     print(f'File ({filename}) successfully saved to output folder /{outputFolder}')
 
-def get_commons_url(filename, format_="json"):
+def get_commons_url(filename, action="query", format_="json"):
   """
   Get the download url of image from Wikimedia API call.
 
