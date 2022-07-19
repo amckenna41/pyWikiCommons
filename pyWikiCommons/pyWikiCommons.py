@@ -139,7 +139,7 @@ def get_commons_url(filename, format_="json"):
 
   """
   #build url and make API call, convert output to json format
-  request_url = BASE_URL + "&format=" + format_ + "&titles=" + filename + "&prop=imageinfo&iiprop=url"
+  request_url = BASE_URL + action + "&format=" + format_ + "&titles=" + filename + "&prop=imageinfo&iiprop=url"
   response = requests.get(request_url).json()
 
   #parse API response to get the download url of file
